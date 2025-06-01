@@ -192,7 +192,7 @@ class Video(object):
         return mouth_frames
 
     def get_video_frames(self, path):
-        frames = iio.imread(path, plugin="pyav")  # Read video as a numpy array
+        frames = iio.imread(path)  # Read video as a numpy array
         return frames
 
     def set_data(self, frames):
